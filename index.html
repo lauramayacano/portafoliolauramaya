@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Maya-Publicidad</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <h1><a href="#seccion1">LAURA MAYA CANO</a> </h1>
+            </div>
+            <ul>
+                <li><a href="#seccion2">SERVICIOS</a></li>
+                <li><a href="#seccion3">EVENTOS</a></li>
+                <li><a href="#seccion4">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="bienvenida" id="seccion1">
+        <div class="wrap">
+          <div class="flex">
+          <div class="foto">
+            <img src="imgs/perfil.jpg" alt="perfil" height="300px" width="300px">
+          </div>
+          <div class="acercademi">
+            <h1 class="presentacion">PRESENTACIÓN</h1>
+            <p>Estudiante de publicidad con énfasis
+                social de la Universidad Católica Luis
+                Amigó, donde he desarrollado un alto
+                nivel de compromiso y organización.
+                Me gusta potencializar mis talentos y
+                aprender de las habilidades de los
+                demás para fortalecer mis capacidades,
+                en cada proyecto del que hago parte
+                dejo mi grano de arena a través de mi
+                proactividad, recursividad y sentido
+                crítico </p>
+            <div class="redes">
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-behance-square"></i></i> Behance</a></li>
+                    <li><a href="#"target="_blank"> <i class="fa-brands fa-facebook-square"></i> Facebook</a></li>
+                </ul>
+            </div>
+          </div>
+           </div>
+                <div class="down animate__animated animate__bounceInDown animate__slower	3s animate__repeat-2	2">
+                   <a href="#seccion2"> <i class="fa-solid fa-circle-chevron-down"></i></a>
+                </div>
+        </div>
+</section>
+    
+    <section class="servicios" id="seccion2">
+        <div class="wrap">
+            <h1>Mis Servicios</h1>
+            <p> Estos son algunos de los servicios que te podria prestar</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="imgs/branding.jpg"  alt="branding"></div>
+                      <div class="swiper-slide"><img src="imgs/fotografia.jpg" alt="fotografia"></div>
+                      <div class="swiper-slide"><img src="imgs/ilustrator.jpg" alt="ilustrator"></div>
+                      <div class="swiper-slide"><img src="imgs/creatividad.webp" alt="creatividad"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>  
+                  <h3>Diseño, branding, fotografia entre otros</h3> 
+        </div>
+
+</section>
+<section class="eventos" id="seccion3">
+    <div class="wrap">
+        <h1>Eventos </h1>
+        <p>Somos AdGame: 1er Encuentro Internacional de Advergaming PUBLICIDAD / MARKETING / GAMERS.
+            Un evento que pretende crear un espacio basado en el aprendizaje y el enriquecimiento de la mano de grandes
+            líderes creativos en los diferentes ámbitos de la publicidad el marketing y el gaming, con la intención de mostrar, con 
+            herramientas innovadoras, el auge de esta corriente publicitaria que contribuirá al conocimiento de las futuras generaciones. </p>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F103613965622198%2Fvideos%2F573785577236955%2F&show_text=false&width=560&t=0"
+             width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+             
+    </div>
+</section>
+<section class="contacto" id="seccion4">
+    <div class="wrap">
+        <h1>Ubicaciòn</h1>
+        <p> Estamos ubicados en la Universidad catolica Luis Amigó </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.132963634253!2d-75.5837306!3d6.2593518!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa82ebb8889ab4dae!2sUniversidad%20Cat%C3%B3lica%20Luis%20Amig%C3%B3%20-%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1652381088065!5m2!1ses!2sco" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+    </div>
+</section>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+</body>
+</html>
